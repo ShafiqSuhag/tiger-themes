@@ -5,7 +5,7 @@ import Header from './Header';
 
 const Master = () => {
     return (
-        <div className="px-10 pt-20">
+        <div className="md:px-10">
             <Header></Header>
             <ThemeContainer></ThemeContainer>
             <Footer></Footer>

@@ -39,9 +39,10 @@ const Theme = (props) => {
                             <div className="text-2xl font-bold">${price}</div>
                             <div>
                                 <button
+                                onClick={()=> props.handleAddToCart(props.theme)}
                                     data-modal-toggle="example"
                                     data-modal-action="open"
-                                    className=" text-sm bg-green-400 font-semibold text-white px-2 py-1 m-w-32 rounded hover:bg-purple-700 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300 mr-2"
+                                    className=" text-sm bg-yellow-600 font-semibold text-white px-2 py-1 m-w-32 rounded hover:bg-purple-700 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300 mr-2"
       >
           
                                  {<FontAwesomeIcon icon={faCartArrowDown} />}   ADD TO CART 
