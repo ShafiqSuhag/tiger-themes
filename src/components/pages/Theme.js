@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Theme = (props) => {
-    const { name, rating, sales, price, preview_link, image, author } = props.theme;
+    const { name, rating, sales, price, preview_link, image, author, last_update } = props.theme;
     return (
         <div className="wrapper  antialiased text-gray-900 mb-10">
             <div>
@@ -14,7 +14,7 @@ const Theme = (props) => {
                         <h4 title={name} className="mt-1 text-lg font-semibold uppercase leading-tight truncate"> {name} </h4>
                         <div className="flex justify-between items-center text-sm mt-1">
                             <span>By : {author} </span>
-                            <span className="text-gray-400">Last Update : <span className="text-gray-500"> 25 Spe 21</span> 	</span>
+                            <span className="text-gray-400">Last Update : <span className="text-gray-500"> {last_update} </span> 	</span>
                         </div>
 
                         <div className=" flex justify-between items-center text-lg font-semibold my-5">
@@ -46,7 +46,7 @@ const Theme = (props) => {
                                     className=" text-sm text-purple-600 border hover:text-white border-purple-600 px-2 py-1 m-w-32 rounded hover:bg-purple-700 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300 " rel="noreferrer"
                                 >
 
-                                    PREVIEW
+                                    <i className="far fa-eye"></i>
                                 </a>
                             </div>
                         </div>
