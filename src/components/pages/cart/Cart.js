@@ -25,7 +25,7 @@ const Cart = (props) => {
         <div>
             <div className="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-4 xxl:col-span-4">
                 <div className="bg-white py-4 px-4 shadow-xl rounded-lg my-4 mx-4">
-                    {/* <!-- classic add --> */}
+
 
                     {cart.map(cartItem => <CartItem key={cartItem.id} cartItem={cartItem}></CartItem>)}
 
