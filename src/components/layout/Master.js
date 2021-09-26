@@ -5,6 +5,7 @@ import Header from './Header';
 
 const Master = () => {
     return (
+        // this is main layout 
         <div className="md:px-10">
             <Header></Header>
             <ThemeContainer></ThemeContainer>
