@@ -13,7 +13,7 @@ const Theme = (props) => {
                     <div className="bg-white p-6 rounded-lg shadow-lg">
 
                         <h4 title={name} className="mt-1 text-lg font-semibold uppercase leading-tight truncate"> {name} </h4>
-                        <div className="flex flex-wrap justify-between items-center text-sm mt-1">
+                        <div className="flex  justify-between items-center text-sm mt-1">
                             <span>By : {author} </span>
                             <span className="text-gray-400">Last Update : <span className="text-gray-500"> {last_update} </span> 	</span>
                         </div>
